@@ -12,7 +12,7 @@
 			{ "trigger": "assertCount", "contents": "assertCount(${1:expectedCount}, ${2:haystack}${3:, '${4:message}'})" },
 			{ "trigger": "assertEmpty", "contents": "assertEmpty(${1:actual}${2:, '${3:message}'})" },
 			{ "trigger": "assertEqualXMLStructure", "contents": "assertEqualXMLStructure(${1:expectedElement}, ${2:actualElement}${3:, '${4:checkAttributes}'}${5:, '${6:message}'})" },
-			{ "trigger": "assertEquals", "contents": "assertEquals(${1:expected}, ${2:actual}${3:, '${4:message}'})" },
+			{ "trigger": "assertEquals", "contents": "assertEquals(${1:expected}, ${2:actual} ${3:, '${4:message}'${5:, ${6:delta}}})" },
 			{ "trigger": "assertFalse", "contents": "assertFalse(${1:actual}${2:, '${3:message}'})" },
 			{ "trigger": "assertFileEquals", "contents": "assertFileEquals(${1:expected}, ${2:actual}${3:, '${4:message}'})" },
 			{ "trigger": "assertFileExists", "contents": "assertFileExists(${1:filename}${2:, '${3:message}'})" },

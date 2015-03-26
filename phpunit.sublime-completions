@@ -373,6 +373,14 @@
         {
             "trigger": "getMock",
             "contents": "getMock(${1:originalClassName}${2:, ${3:methods}}${4:, ${5:arguments}}${6:, '${7:mockClassName}'}${8:, ${9:callOriginalConstructor}}${10:, ${11:callOriginalClone}}${12:, ${13:callAutoload}}${14:, ${15:cloneArguments}});"
+        },
+        {
+            "trigger": "markTestSkipped",
+            "contents": "markTestSkipped('${1:Skipping}');"
+        },
+        {
+            "trigger": "markTestIncomplete",
+            "contents": "markTestIncomplete('${1:Incomplete}');"
         }
     ]
 }

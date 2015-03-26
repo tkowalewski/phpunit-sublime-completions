@@ -4,375 +4,383 @@
         "php",
         {
             "trigger": "assertArrayHasKey",
-            "contents": "assertArrayHasKey(${1:key}, ${2:array}${3:, '${4:message}'});"
+            "contents": "\\$this->assertArrayHasKey(${1:key}, ${2:array}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertArrayNotHasKey",
-            "contents": "assertArrayNotHasKey(${1:key}, ${2:array}${3:, '${4:message}'});"
+            "contents": "\\$this->assertArrayNotHasKey(${1:key}, ${2:array}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertContains",
-            "contents": "assertContains(${1:needle}, ${2:haystack}${3:, '${4:message}'}${5:, ${6:ignoreCase}}${7:, ${8:checkForObjectIdentity}});"
+            "contents": "\\$this->assertContains(${1:needle}, ${2:haystack}${3:, '${4:message}'}${5:, ${6:ignoreCase}}${7:, ${8:checkForObjectIdentity}});"
         },
         {
             "trigger": "assertAttributeContains",
-            "contents": "assertAttributeContains(${1:needle}, ${2:haystackAttributeName},${3:haystackClassOrObject}${4:, '${5:message}'}${6:, ${7:ignoreCase}}${8:, ${9:checkForObjectIdentity}});"
+            "contents": "\\$this->assertAttributeContains(${1:needle}, ${2:haystackAttributeName},${3:haystackClassOrObject}${4:, '${5:message}'}${6:, ${7:ignoreCase}}${8:, ${9:checkForObjectIdentity}});"
         },
         {
             "trigger": "assertNotContains",
-            "contents": "assertNotContains(${1:needle}, ${2:haystack}${3:, '${4:message}'}${5:, ${6:ignoreCase}}${7:, ${8:checkForObjectIdentity}});"
+            "contents": "\\$this->assertNotContains(${1:needle}, ${2:haystack}${3:, '${4:message}'}${5:, ${6:ignoreCase}}${7:, ${8:checkForObjectIdentity}});"
         },
         {
             "trigger": "assertAttributeNotContains",
-            "contents": "assertAttributeNotContains(${1:needle}, ${2:haystackAttributeName}, ${3:haystackClassOrObject}${4:, '${5:message}'}${6:, ${7:ignoreCase}}${8:, ${9:checkForObjectIdentity}});"
+            "contents": "\\$this->assertAttributeNotContains(${1:needle}, ${2:haystackAttributeName}, ${3:haystackClassOrObject}${4:, '${5:message}'}${6:, ${7:ignoreCase}}${8:, ${9:checkForObjectIdentity}});"
         },
         {
             "trigger": "assertContainsOnly",
-            "contents": "assertContainsOnly(${1:type}, ${2:haystack}${3:, ${4:isNativeType}}${5:, '${6:message}'});"
+            "contents": "\\$this->assertContainsOnly(${1:type}, ${2:haystack}${3:, ${4:isNativeType}}${5:, '${6:message}'});"
         },
         {
             "trigger": "assertContainsOnlyInstancesOf",
-            "contents": "assertContainsOnlyInstancesOf(${1:classname}, ${2:haystack}${3:, '${4:message}'});"
+            "contents": "\\$this->assertContainsOnlyInstancesOf(${1:classname}, ${2:haystack}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertAttributeContainsOnly",
-            "contents": "assertAttributeContainsOnly(${1:type}, ${2:haystackAttributeName}, ${3:haystackClassOrObject}${4:, ${5:isNativeType}}${6:, '${7:message}'});"
+            "contents": "\\$this->assertAttributeContainsOnly(${1:type}, ${2:haystackAttributeName}, ${3:haystackClassOrObject}${4:, ${5:isNativeType}}${6:, '${7:message}'});"
         },
         {
             "trigger": "assertNotContainsOnly",
-            "contents": "assertNotContainsOnly(${1:type}, ${2:haystack}${3:, ${4:isNativeType}}${5:, '${6:message}'});"
+            "contents": "\\$this->assertNotContainsOnly(${1:type}, ${2:haystack}${3:, ${4:isNativeType}}${5:, '${6:message}'});"
         },
         {
             "trigger": "assertAttributeNotContainsOnly",
-            "contents": "assertAttributeNotContainsOnly(${1:type}, ${2:haystackAttributeName}, ${3:haystackClassOrObject}${4:, ${5:isNativeType}}${6:, '${7:message}'});"
+            "contents": "\\$this->assertAttributeNotContainsOnly(${1:type}, ${2:haystackAttributeName}, ${3:haystackClassOrObject}${4:, ${5:isNativeType}}${6:, '${7:message}'});"
         },
         {
             "trigger": "assertCount",
-            "contents": "assertCount(${1:expectedCount}, ${2:haystack}${3:, '${4:message}'});"
+            "contents": "\\$this->assertCount(${1:expectedCount}, ${2:haystack}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertAttributeCount",
-            "contents": "assertAttributeCount(${1:expectedCount}, ${2:haystackAttributeName}, ${3:haystackClassOrObject}${4:, '${5:message}'});"
+            "contents": "\\$this->assertAttributeCount(${1:expectedCount}, ${2:haystackAttributeName}, ${3:haystackClassOrObject}${4:, '${5:message}'});"
         },
         {
             "trigger": "assertNotCount",
-            "contents": "assertNotCount(${1:expectedCount}, ${2:haystack}${3:, '${4:message}'});"
+            "contents": "\\$this->assertNotCount(${1:expectedCount}, ${2:haystack}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertAttributeNotCount",
-            "contents": "assertAttributeNotCount(${1:expectedCount}, ${2:haystackAttributeName}, ${3:haystackClassOrObject}${4:, '${5:message}'});"
+            "contents": "\\$this->assertAttributeNotCount(${1:expectedCount}, ${2:haystackAttributeName}, ${3:haystackClassOrObject}${4:, '${5:message}'});"
         },
         {
             "trigger": "assertEquals",
-            "contents": "assertEquals(${1:expected}, ${2:actual}${3:, '${4:message}'}${5:, ${6:delta}}${7:, ${8:maxDepth}}${9:, ${10:canonicalize}}${11:, ${12:ignoreCase}});"
+            "contents": "\\$this->assertEquals(${1:expected}, ${2:actual}${3:, '${4:message}'}${5:, ${6:delta}}${7:, ${8:maxDepth}}${9:, ${10:canonicalize}}${11:, ${12:ignoreCase}});"
         },
         {
             "trigger": "assertAttributeEquals",
-            "contents": "assertAttributeEquals(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'}${6:, ${7:delta}}${8:, ${9:maxDepth}}${10:, ${11:canonicalize}}${12:, ${13:ignoreCase}});"
+            "contents": "\\$this->assertAttributeEquals(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'}${6:, ${7:delta}}${8:, ${9:maxDepth}}${10:, ${11:canonicalize}}${12:, ${13:ignoreCase}});"
         },
         {
             "trigger": "assertNotEquals",
-            "contents": "assertNotEquals(${1:expected}, ${2:actual}${3:, '${4:message}'}${5:, ${6:delta}}${7:, ${8:maxDepth}}${9:, ${10:canonicalize}}${11:, ${12:ignoreCase}});"
+            "contents": "\\$this->assertNotEquals(${1:expected}, ${2:actual}${3:, '${4:message}'}${5:, ${6:delta}}${7:, ${8:maxDepth}}${9:, ${10:canonicalize}}${11:, ${12:ignoreCase}});"
         },
         {
             "trigger": "assertAttributeNotEquals",
-            "contents": "assertAttributeNotEquals(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'}${6:, ${7:delta}}${8:, ${9:maxDepth}}${10:, ${11:canonicalize}}${12:, ${13:ignoreCase}});"
+            "contents": "\\$this->assertAttributeNotEquals(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'}${6:, ${7:delta}}${8:, ${9:maxDepth}}${10:, ${11:canonicalize}}${12:, ${13:ignoreCase}});"
         },
         {
             "trigger": "assertEmpty",
-            "contents": "assertEmpty(${1:actual}${2:, '${3:message}'});"
+            "contents": "\\$this->assertEmpty(${1:actual}${2:, '${3:message}'});"
         },
         {
             "trigger": "assertAttributeEmpty",
-            "contents": "assertAttributeEmpty(${1:haystackAttributeName}, ${2:haystackClassOrObject}${3:, '${4:message}'});"
+            "contents": "\\$this->assertAttributeEmpty(${1:haystackAttributeName}, ${2:haystackClassOrObject}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertNotEmpty",
-            "contents": "assertNotEmpty(${1:actual}${2:, '${3:message}'});"
+            "contents": "\\$this->assertNotEmpty(${1:actual}${2:, '${3:message}'});"
         },
         {
             "trigger": "assertAttributeNotEmpty",
-            "contents": "assertAttributeNotEmpty(${1:haystackAttributeName}, ${2:haystackClassOrObject}${3:, '${4:message}'});"
+            "contents": "\\$this->assertAttributeNotEmpty(${1:haystackAttributeName}, ${2:haystackClassOrObject}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertGreaterThan",
-            "contents": "assertGreaterThan(${1:expected}, ${2:actual}${3:, '${4:message}'});"
+            "contents": "\\$this->assertGreaterThan(${1:expected}, ${2:actual}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertAttributeGreaterThan",
-            "contents": "assertAttributeGreaterThan(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'});"
+            "contents": "\\$this->assertAttributeGreaterThan(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'});"
         },
         {
             "trigger": "assertGreaterThanOrEqual",
-            "contents": "assertGreaterThanOrEqual(${1:expected}, ${2:actual}${3:, '${4:message}'});"
+            "contents": "\\$this->assertGreaterThanOrEqual(${1:expected}, ${2:actual}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertAttributeGreaterThanOrEqual",
-            "contents": "assertAttributeGreaterThanOrEqual(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'});"
+            "contents": "\\$this->assertAttributeGreaterThanOrEqual(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'});"
         },
         {
             "trigger": "assertLessThan",
-            "contents": "assertLessThan(${1:expected}, ${2:actual}${3:, '${4:message}'});"
+            "contents": "\\$this->assertLessThan(${1:expected}, ${2:actual}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertAttributeLessThan",
-            "contents": "assertAttributeLessThan(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'});"
+            "contents": "\\$this->assertAttributeLessThan(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'});"
         },
         {
             "trigger": "assertLessThanOrEqual",
-            "contents": "assertLessThanOrEqual(${1:expected}, ${2:actual}${3:, '${4:message}'});"
+            "contents": "\\$this->assertLessThanOrEqual(${1:expected}, ${2:actual}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertAttributeLessThanOrEqual",
-            "contents": "assertAttributeLessThanOrEqual(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'});"
+            "contents": "\\$this->assertAttributeLessThanOrEqual(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'});"
         },
         {
             "trigger": "assertFileEquals",
-            "contents": "assertFileEquals(${1:expected}, ${2:actual}${3:, '${4:message}'}${5:, ${6:canonicalize}}${7:, ${8:ignoreCase}});"
+            "contents": "\\$this->assertFileEquals(${1:expected}, ${2:actual}${3:, '${4:message}'}${5:, ${6:canonicalize}}${7:, ${8:ignoreCase}});"
         },
         {
             "trigger": "assertFileNotEquals",
-            "contents": "assertFileNotEquals(${1:expected}, ${2:actual}${3:, '${4:message}'}${5:, ${6:canonicalize}}${7:, ${8:ignoreCase}});"
+            "contents": "\\$this->assertFileNotEquals(${1:expected}, ${2:actual}${3:, '${4:message}'}${5:, ${6:canonicalize}}${7:, ${8:ignoreCase}});"
         },
         {
             "trigger": "assertStringEqualsFile",
-            "contents": "assertStringEqualsFile(${1:expectedFile}, ${2:actualString}${3:, '${4:message}'}${5:, ${6:canonicalize}}${7:, ${8:ignoreCase}});"
+            "contents": "\\$this->assertStringEqualsFile(${1:expectedFile}, ${2:actualString}${3:, '${4:message}'}${5:, ${6:canonicalize}}${7:, ${8:ignoreCase}});"
         },
         {
             "trigger": "assertStringNotEqualsFile",
-            "contents": "assertStringNotEqualsFile(${1:expectedFile}, ${2:actualString}${3:, '${4:message}'}${5:, ${6:canonicalize}}${7:, ${8:ignoreCase}});"
+            "contents": "\\$this->assertStringNotEqualsFile(${1:expectedFile}, ${2:actualString}${3:, '${4:message}'}${5:, ${6:canonicalize}}${7:, ${8:ignoreCase}});"
         },
         {
             "trigger": "assertFileExists",
-            "contents": "assertFileExists(${1:filename}${2:, '${3:message}'});"
+            "contents": "\\$this->assertFileExists(${1:filename}${2:, '${3:message}'});"
         },
         {
             "trigger": "assertFileNotExists",
-            "contents": "assertFileNotExists(${1:filename}${2:, '${3:message}'});"
+            "contents": "\\$this->assertFileNotExists(${1:filename}${2:, '${3:message}'});"
         },
         {
             "trigger": "assertTrue",
-            "contents": "assertTrue(${1:condition}${2:, '${3:message}'});"
+            "contents": "\\$this->assertTrue(${1:condition}${2:, '${3:message}'});"
         },
         {
             "trigger": "assertFalse",
-            "contents": "assertFalse(${1:condition}${2:, '${3:message}'});"
+            "contents": "\\$this->assertFalse(${1:condition}${2:, '${3:message}'});"
         },
         {
             "trigger": "assertNotNull",
-            "contents": "assertNotNull(${1:actual}${2:, '${3:message}'});"
+            "contents": "\\$this->assertNotNull(${1:actual}${2:, '${3:message}'});"
         },
         {
             "trigger": "assertNull",
-            "contents": "assertNull(${1:actual}${2:, '${3:message}'});"
+            "contents": "\\$this->assertNull(${1:actual}${2:, '${3:message}'});"
         },
         {
             "trigger": "assertClassHasAttribute",
-            "contents": "assertClassHasAttribute(${1:attributeName}, ${2:className}${3:, '${4:message}'});"
+            "contents": "\\$this->assertClassHasAttribute(${1:attributeName}, ${2:className}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertClassNotHasAttribute",
-            "contents": "assertClassNotHasAttribute(${1:attributeName}, ${2:className}${3:, '${4:message}'});"
+            "contents": "\\$this->assertClassNotHasAttribute(${1:attributeName}, ${2:className}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertClassHasStaticAttribute",
-            "contents": "assertClassHasStaticAttribute(${1:attributeName}, ${2:className}${3:, '${4:message}'});"
+            "contents": "\\$this->assertClassHasStaticAttribute(${1:attributeName}, ${2:className}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertClassNotHasStaticAttribute",
-            "contents": "assertClassNotHasStaticAttribute(${1:attributeName}, ${2:className}${3:, '${4:message}'});"
+            "contents": "\\$this->assertClassNotHasStaticAttribute(${1:attributeName}, ${2:className}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertObjectHasAttribute",
-            "contents": "assertObjectHasAttribute(${1:attributeName}, ${2:object}${3:, '${4:message}'});"
+            "contents": "\\$this->assertObjectHasAttribute(${1:attributeName}, ${2:object}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertObjectNotHasAttribute",
-            "contents": "assertObjectNotHasAttribute(${1:attributeName}, ${2:object}${3:, '${4:message}'});"
+            "contents": "\\$this->assertObjectNotHasAttribute(${1:attributeName}, ${2:object}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertSame",
-            "contents": "assertSame(${1:expected}, ${2:actual}${3:, '${4:message}'});"
+            "contents": "\\$this->assertSame(${1:expected}, ${2:actual}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertAttributeSame",
-            "contents": "assertAttributeSame(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'});"
+            "contents": "\\$this->assertAttributeSame(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'});"
         },
         {
             "trigger": "assertNotSame",
-            "contents": "assertNotSame(${1:expected}, ${2:actual}${3:, '${4:message}'});"
+            "contents": "\\$this->assertNotSame(${1:expected}, ${2:actual}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertAttributeNotSame",
-            "contents": "assertAttributeNotSame(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'});"
+            "contents": "\\$this->assertAttributeNotSame(${1:expected}, ${2:actualAttributeName}, ${3:actualClassOrObject}${4:, '${5:message}'});"
         },
         {
             "trigger": "assertInstanceOf",
-            "contents": "assertInstanceOf(${1:expected}, ${2:actual}${3:, '${4:message}'});"
+            "contents": "\\$this->assertInstanceOf(${1:expected}, ${2:actual}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertAttributeInstanceOf",
-            "contents": "assertAttributeInstanceOf(${1:expected}, ${2:attributeName}, ${3:classOrObject}${4:, '${5:message}'});"
+            "contents": "\\$this->assertAttributeInstanceOf(${1:expected}, ${2:attributeName}, ${3:classOrObject}${4:, '${5:message}'});"
         },
         {
             "trigger": "assertNotInstanceOf",
-            "contents": "assertNotInstanceOf(${1:expected}, ${2:actual}${3:, '${4:message}'});"
+            "contents": "\\$this->assertNotInstanceOf(${1:expected}, ${2:actual}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertAttributeNotInstanceOf",
-            "contents": "assertAttributeNotInstanceOf(${1:expected}, ${2:attributeName}, ${3:classOrObject}${4:, '${5:message}'});"
+            "contents": "\\$this->assertAttributeNotInstanceOf(${1:expected}, ${2:attributeName}, ${3:classOrObject}${4:, '${5:message}'});"
         },
         {
             "trigger": "assertInternalType",
-            "contents": "assertInternalType(${1:expected}, ${2:actual}${3:, '${4:message}'});"
+            "contents": "\\$this->assertInternalType(${1:expected}, ${2:actual}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertAttributeInternalType",
-            "contents": "assertAttributeInternalType(${1:expected}, ${2:attributeName}, ${3:classOrObject}${4:, '${5:message}'});"
+            "contents": "\\$this->assertAttributeInternalType(${1:expected}, ${2:attributeName}, ${3:classOrObject}${4:, '${5:message}'});"
         },
         {
             "trigger": "assertNotInternalType",
-            "contents": "assertNotInternalType(${1:expected}, ${2:actual}${3:, '${4:message}'});"
+            "contents": "\\$this->assertNotInternalType(${1:expected}, ${2:actual}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertAttributeNotInternalType",
-            "contents": "assertAttributeNotInternalType(${1:expected}, ${2:attributeName}, ${3:classOrObject}${4:, '${5:message}'});"
+            "contents": "\\$this->assertAttributeNotInternalType(${1:expected}, ${2:attributeName}, ${3:classOrObject}${4:, '${5:message}'});"
         },
         {
             "trigger": "assertRegExp",
-            "contents": "assertRegExp(${1:pattern}, ${2:string}${3:, '${4:message}'});"
+            "contents": "\\$this->assertRegExp(${1:pattern}, ${2:string}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertNotRegExp",
-            "contents": "assertNotRegExp(${1:pattern}, ${2:string}${3:, '${4:message}'});"
+            "contents": "\\$this->assertNotRegExp(${1:pattern}, ${2:string}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertSameSize",
-            "contents": "assertSameSize(${1:expected}, ${2:actual}${3:, '${4:message}'});"
+            "contents": "\\$this->assertSameSize(${1:expected}, ${2:actual}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertNotSameSize",
-            "contents": "assertNotSameSize(${1:expected}, ${2:actual}${3:, '${4:message}'});"
+            "contents": "\\$this->assertNotSameSize(${1:expected}, ${2:actual}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertStringMatchesFormat",
-            "contents": "assertStringMatchesFormat(${1:format}, ${2:string}${3:, '${4:message}'});"
+            "contents": "\\$this->assertStringMatchesFormat(${1:format}, ${2:string}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertStringNotMatchesFormat",
-            "contents": "assertStringNotMatchesFormat(${1:format}, ${2:string}${3:, '${4:message}'});"
+            "contents": "\\$this->assertStringNotMatchesFormat(${1:format}, ${2:string}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertStringMatchesFormatFile",
-            "contents": "assertStringMatchesFormatFile(${1:formatFile}, ${2:string}${3:, '${4:message}'});"
+            "contents": "\\$this->assertStringMatchesFormatFile(${1:formatFile}, ${2:string}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertStringNotMatchesFormatFile",
-            "contents": "assertStringNotMatchesFormatFile(${1:formatFile}, ${2:string}${3:, '${4:message}'});"
+            "contents": "\\$this->assertStringNotMatchesFormatFile(${1:formatFile}, ${2:string}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertStringStartsWith",
-            "contents": "assertStringStartsWith(${1:prefix}, ${2:string}${3:, '${4:message}'});"
+            "contents": "\\$this->assertStringStartsWith(${1:prefix}, ${2:string}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertStringStartsNotWith",
-            "contents": "assertStringStartsNotWith(${1:prefix}, ${2:string}${3:, '${4:message}'});"
+            "contents": "\\$this->assertStringStartsNotWith(${1:prefix}, ${2:string}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertStringEndsWith",
-            "contents": "assertStringEndsWith(${1:suffix}, ${2:string}${3:, '${4:message}'});"
+            "contents": "\\$this->assertStringEndsWith(${1:suffix}, ${2:string}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertStringEndsNotWith",
-            "contents": "assertStringEndsNotWith(${1:suffix}, ${2:string}${3:, '${4:message}'});"
+            "contents": "\\$this->assertStringEndsNotWith(${1:suffix}, ${2:string}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertXmlFileEqualsXmlFile",
-            "contents": "assertXmlFileEqualsXmlFile(${1:expectedFile}, ${2:actualFile}${3:, '${4:message}'});"
+            "contents": "\\$this->assertXmlFileEqualsXmlFile(${1:expectedFile}, ${2:actualFile}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertXmlFileNotEqualsXmlFile",
-            "contents": "assertXmlFileNotEqualsXmlFile(${1:expectedFile}, ${2:actualFile}${3:, '${4:message}'});"
+            "contents": "\\$this->assertXmlFileNotEqualsXmlFile(${1:expectedFile}, ${2:actualFile}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertXmlStringEqualsXmlFile",
-            "contents": "assertXmlStringEqualsXmlFile(${1:expectedFile}, ${2:actualXml}${3:, '${4:message}'});"
+            "contents": "\\$this->assertXmlStringEqualsXmlFile(${1:expectedFile}, ${2:actualXml}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertXmlStringNotEqualsXmlFile",
-            "contents": "assertXmlStringNotEqualsXmlFile(${1:expectedFile}, ${2:actualXml}${3:, '${4:message}'});"
+            "contents": "\\$this->assertXmlStringNotEqualsXmlFile(${1:expectedFile}, ${2:actualXml}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertXmlStringEqualsXmlString",
-            "contents": "assertXmlStringEqualsXmlString(${1:expectedXml}, ${2:actualXml}${3:, '${4:message}'});"
+            "contents": "\\$this->assertXmlStringEqualsXmlString(${1:expectedXml}, ${2:actualXml}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertXmlStringNotEqualsXmlString",
-            "contents": "assertXmlStringNotEqualsXmlString(${1:expectedXml}, ${2:actualXml}${3:, '${4:message}'});"
+            "contents": "\\$this->assertXmlStringNotEqualsXmlString(${1:expectedXml}, ${2:actualXml}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertEqualXMLStructure",
-            "contents": "assertEqualXMLStructure(${1:expectedElement}, ${2:actualElement}${3:, ${4:checkAttributes}}${5:, '${6:message}'});"
+            "contents": "\\$this->assertEqualXMLStructure(${1:expectedElement}, ${2:actualElement}${3:, ${4:checkAttributes}}${5:, '${6:message}'});"
         },
         {
             "trigger": "assertSelectCount",
-            "contents": "assertSelectCount(${1:selector}, ${2:count}, ${3:actual}${4:, '${5:message}'}${6:, ${7:isHtml}});"
+            "contents": "\\$this->assertSelectCount(${1:selector}, ${2:count}, ${3:actual}${4:, '${5:message}'}${6:, ${7:isHtml}});"
         },
         {
             "trigger": "assertSelectRegExp",
-            "contents": "assertSelectRegExp(${1:selector}, ${2:pattern}, ${3:count}, ${4:actual}${5:, '${6:message}'}${7:, ${8:isHtml}});"
+            "contents": "\\$this->assertSelectRegExp(${1:selector}, ${2:pattern}, ${3:count}, ${4:actual}${5:, '${6:message}'}${7:, ${8:isHtml}});"
         },
         {
             "trigger": "assertSelectEquals",
-            "contents": "assertSelectEquals(${1:selector}, ${2:content}, ${3:count}, ${4:actual}${5:, '${6:message}'}${7:, ${8:isHtml}});"
+            "contents": "\\$this->assertSelectEquals(${1:selector}, ${2:content}, ${3:count}, ${4:actual}${5:, '${6:message}'}${7:, ${8:isHtml}});"
         },
         {
             "trigger": "assertTag",
-            "contents": "assertTag(${1:matcher}, ${2:actual}${3:, '${4:message}'}${5:, ${6:isHtml}});"
+            "contents": "\\$this->assertTag(${1:matcher}, ${2:actual}${3:, '${4:message}'}${5:, ${6:isHtml}});"
         },
         {
             "trigger": "assertNotTag",
-            "contents": "assertNotTag(${1:matcher}, ${2:actual}${3:, '${4:message}'}${5:, ${6:isHtml}});"
+            "contents": "\\$this->assertNotTag(${1:matcher}, ${2:actual}${3:, '${4:message}'}${5:, ${6:isHtml}});"
         },
         {
             "trigger": "assertThat",
-            "contents": "assertThat(${1:value}, ${2:constraint}${3:, '${4:message}'});"
+            "contents": "\\$this->assertThat(${1:value}, ${2:constraint}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertJson",
-            "contents": "assertJson(${1:expectedJson}${2:, '${3:message}'});"
+            "contents": "\\$this->assertJson(${1:expectedJson}${2:, '${3:message}'});"
         },
         {
             "trigger": "assertJsonStringEqualsJsonString",
-            "contents": "assertJsonStringEqualsJsonString(${1:expectedJson}, ${2:actualJson}${3:, '${4:message}'});"
+            "contents": "\\$this->assertJsonStringEqualsJsonString(${1:expectedJson}, ${2:actualJson}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertJsonStringNotEqualsJsonString",
-            "contents": "assertJsonStringNotEqualsJsonString(${1:expectedJson}, ${2:actualJson}${3:, '${4:message}'});"
+            "contents": "\\$this->assertJsonStringNotEqualsJsonString(${1:expectedJson}, ${2:actualJson}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertJsonStringEqualsJsonFile",
-            "contents": "assertJsonStringEqualsJsonFile(${1:expectedFile}, ${2:actualJson}${3:, '${4:message}'});"
+            "contents": "\\$this->assertJsonStringEqualsJsonFile(${1:expectedFile}, ${2:actualJson}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertJsonStringNotEqualsJsonFile",
-            "contents": "assertJsonStringNotEqualsJsonFile(${1:expectedFile}, ${2:actualJson}${3:, '${4:message}'});"
+            "contents": "\\$this->assertJsonStringNotEqualsJsonFile(${1:expectedFile}, ${2:actualJson}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertJsonFileNotEqualsJsonFile",
-            "contents": "assertJsonFileNotEqualsJsonFile(${1:expectedFile}, ${2:actualFile}${3:, '${4:message}'});"
+            "contents": "\\$this->assertJsonFileNotEqualsJsonFile(${1:expectedFile}, ${2:actualFile}${3:, '${4:message}'});"
         },
         {
             "trigger": "assertJsonFileEqualsJsonFile",
-            "contents": "assertJsonFileEqualsJsonFile(${1:expectedFile}, ${2:actualFile}${3:, '${4:message}'});"
+            "contents": "\\$this->assertJsonFileEqualsJsonFile(${1:expectedFile}, ${2:actualFile}${3:, '${4:message}'});"
         },
         {
             "trigger": "setExpectedException",
-            "contents": "setExpectedException(${1:exceptionName}${2:, '${3:exceptionMessage}'}${4:, ${5:exceptionCode}});"
+            "contents": "\\$this->setExpectedException(${1:exceptionName}${2:, '${3:exceptionMessage}'}${4:, ${5:exceptionCode}});"
         },
         {
             "trigger": "getMock",
-            "contents": "getMock(${1:originalClassName}${2:, ${3:methods}}${4:, ${5:arguments}}${6:, '${7:mockClassName}'}${8:, ${9:callOriginalConstructor}}${10:, ${11:callOriginalClone}}${12:, ${13:callAutoload}}${14:, ${15:cloneArguments}});"
+            "contents": "\\$this->getMock(${1:originalClassName}${2:, ${3:methods}}${4:, ${5:arguments}}${6:, '${7:mockClassName}'}${8:, ${9:callOriginalConstructor}}${10:, ${11:callOriginalClone}}${12:, ${13:callAutoload}}${14:, ${15:cloneArguments}});"
+        },
+        {
+            "trigger": "markTestSkipped",
+            "contents": "\\$this->markTestSkipped('${1:Skipping}');"
+        },
+        {
+            "trigger": "markTestIncomplete",
+            "contents": "\\$this->markTestIncomplete('${1:Incomplete}');"
         }
     ]
 }

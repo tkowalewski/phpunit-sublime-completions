@@ -375,6 +375,10 @@
             "contents": "assertInfinite(${1:variable}, ${2:, '${3:message}'})"
         },
         {
+            "trigger": "assertNan",
+            "contents": "assertNan(${1:variable}, ${2:, '${3:message}'})"
+        },
+        {
             "trigger": "setExpectedException",
             "contents": "setExpectedException(${1:exceptionName}${2:, '${3:exceptionMessage}'}${4:, ${5:exceptionCode}});"
         },

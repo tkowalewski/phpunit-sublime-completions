@@ -368,15 +368,15 @@
         },
         {
             "trigger": "assertArraySubset",
-            "contents": "assertArraySubset(${1:subset}, ${2:array}, ${3:, '${4:strict}'}${5:, '${6:message}'});"
+            "contents": "assertArraySubset(${1:subset}, ${2:array}${3:, '${4:strict}'}${5:, '${6:message}'});"
         },
         {
             "trigger": "assertInfinite",
-            "contents": "assertInfinite(${1:variable}, ${2:, '${3:message}'})"
+            "contents": "assertInfinite(${1:variable}${2:, '${3:message}'})"
         },
         {
             "trigger": "assertNan",
-            "contents": "assertNan(${1:variable}, ${2:, '${3:message}'})"
+            "contents": "assertNan(${1:variable}${2:, '${3:message}'})"
         },
         {
             "trigger": "setExpectedException",

@@ -367,8 +367,12 @@
             "contents": "assertJsonFileEqualsJsonFile(${1:expectedFile}, ${2:actualFile}${3:, '${4:message}'});"
         },
         {
-            "trigger": "assertArraySubset"
+            "trigger": "assertArraySubset",
             "contents": "assertArraySubset(${1:subset}, ${2:array}, ${3:, '${4:strict}'}${5:, '${6:message}'});"
+        },
+        {
+            "trigger": "assertInfinite",
+            "contents": "assertInfinite(${1:variable}, ${2:, '${3:message}'})"
         },
         {
             "trigger": "setExpectedException",

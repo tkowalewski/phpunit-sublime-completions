@@ -1,0 +1,38 @@
+[
+    {
+        "id": "preferences",
+        "children": [
+            {
+                "id": "package-settings",
+                "children": [
+                    {
+                        "caption": "PHPUnit Completions",
+                        "children": [
+                            {
+                                "caption": "README",
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/phpunit-sublime-completions/README.md"
+                                }
+                            },
+                            {
+                                "caption": "CHANGELOG",
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/phpunit-sublime-completions/CHANGELOG.md"
+                                }
+                            },
+                            {
+                                "caption": "LICENSE",
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/phpunit-sublime-completions/LICENSE"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

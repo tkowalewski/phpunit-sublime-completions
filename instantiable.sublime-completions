@@ -1,0 +1,17 @@
+{
+    // scope:
+    //
+    // source.php support.class
+    //   blacklist:
+    //     meta.catch
+    //     meta.function.argument.typehinted
+    //     string
+
+    "scope": "source.php support.class - meta.catch - meta.function.argument.typehinted - string",
+    "completions": [
+        {"trigger":"PHPUnit_Framework_Error","contents":"PHPUnit_Framework_Error(${1:message}, ${2:code}, ${3:file}, ${4:line}${5:, ${6:previous = null}})"},
+        {"trigger":"PHPUnit_Framework_Error_Deprecated","contents":"PHPUnit_Framework_Error_Deprecated(${1:message}, ${2:code}, ${3:file}, ${4:line}${5:, ${6:previous = null}})"},
+        {"trigger":"PHPUnit_Framework_Error_Notice","contents":"PHPUnit_Framework_Error_Notice(${1:message}, ${2:code}, ${3:file}, ${4:line}${5:, ${6:previous = null}})"},
+        {"trigger":"PHPUnit_Framework_Error_Warning","contents":"PHPUnit_Framework_Error_Warning(${1:message}, ${2:code}, ${3:file}, ${4:line}${5:, ${6:previous = null}})"}
+    ]
+}

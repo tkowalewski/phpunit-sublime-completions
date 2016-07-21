@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+* Added: cursor placeholder for methods with only one optional param
+
 ## 0.10.0
 
 Fixed: Work around ST issues when triggers contain certain characters

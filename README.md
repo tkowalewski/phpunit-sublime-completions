@@ -15,8 +15,8 @@ Provides decent PHPUnit completions.
 
 # Features
 
-* PHPUnit [~4.4](http://semver.org)
-* DbUnit [~1.3](http://semver.org)
+* PHPUnit [~5.4](http://semver.org)
+* DbUnit [~2.0](http://semver.org)
 * [PSR](http://www.php-fig.org) compliant
 * Scoped to minimise auto-complete noise
 * Test case type hints e.g. begin typing at `class Name extends |` and any other context where a type hint is valid.

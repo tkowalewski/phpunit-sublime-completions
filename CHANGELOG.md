@@ -1,8 +1,9 @@
 # Changelog
 
-## Unreleased
+## 0.11.0
 
 * Added: cursor placeholder for methods with only one optional param
+* Updated: PHPUnit 5
 
 ## 0.10.0
 

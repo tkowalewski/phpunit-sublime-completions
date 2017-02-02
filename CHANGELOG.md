@@ -1,4 +1,8 @@
-# Changelog
+# PHPUNIT COMPLETIONS
+
+## 0.12.0
+
+* Update to PHPUnit 5.7.9
 
 ## 0.11.1
 

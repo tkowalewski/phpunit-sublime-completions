@@ -1,8 +1,6 @@
-# tkowalewski/phpunit-sublime-completions
+# PHPUNIT COMPLETIONS
 
-A plugin for Sublime Text.
-
-Provides decent PHPUnit completions.
+Provides decent PHPUnit completions for Sublime Text.
 
 ## Overview
 

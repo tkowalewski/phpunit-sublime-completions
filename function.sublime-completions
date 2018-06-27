@@ -9,10 +9,13 @@
     //     meta.catch
     //     meta.class
     //     meta.function.arguments
+    //     meta.function.parameters
     //     meta.use
     //     string
     //     support.class
     //     variable.other
+    //     variable.parameter
+    //     meta.function.return-type
     // source.php meta.class.php meta.block.php meta.function.php meta.block.php
     //   blacklist:
     //     comment
@@ -20,12 +23,15 @@
     //     entity
     //     meta.catch
     //     meta.function.arguments
+    //     meta.function.parameters
     //     meta.use
     //     string
     //     support.class
     //     variable.other
+    //     variable.parameter
+    //     meta.function.return-type
 
-    "scope": "source.php - comment - constant.other.class - entity - meta.catch - meta.class - meta.function.arguments - meta.use - string - support.class - variable.other, source.php meta.class.php meta.block.php meta.function.php meta.block.php - comment - constant.other.class - entity - meta.catch - meta.function.arguments - meta.use - string - support.class - variable.other",
+    "scope": "source.php - comment - constant.other.class - entity - meta.catch - meta.class - meta.function.arguments - meta.function.parameters - meta.use - string - support.class - variable.other - variable.parameter - meta.function.return-type, source.php meta.class.php meta.block.php meta.function.php meta.block.php - comment - constant.other.class - entity - meta.catch - meta.function.arguments - meta.function.parameters - meta.use - string - support.class - variable.other - variable.parameter - meta.function.return-type",
     "completions": [
         {"trigger":"any","contents":"\\$this->any();"},
         {"trigger":"anything","contents":"\\$this->anything();"},
@@ -166,6 +172,7 @@
         {"trigger":"expectExceptionCode","contents":"\\$this->expectExceptionCode(${1:code});"},
         {"trigger":"expectExceptionMessage","contents":"\\$this->expectExceptionMessage(${1:message});"},
         {"trigger":"expectExceptionMessageRegExp","contents":"\\$this->expectExceptionMessageRegExp(${1:messageRegExp});"},
+        {"trigger":"expectExceptionObject","contents":"\\$this->expectExceptionObject(${1:exception});"},
         {"trigger":"expectOutputRegex","contents":"\\$this->expectOutputRegex(${1:expectedRegex});"},
         {"trigger":"expectOutputString","contents":"\\$this->expectOutputString(${1:expectedString});"},
         {"trigger":"fail","contents":"\\$this->fail($1);"},
@@ -174,14 +181,14 @@
         {"trigger":"getDatabaseTester","contents":"\\$this->getDatabaseTester();"},
         {"trigger":"getDataSet","contents":"\\$this->getDataSet();"},
         {"trigger":"getExpectedException","contents":"\\$this->getExpectedException();"},
-        {"trigger":"getMock","contents":"\\$this->getMock(${1:originalClassName});"},
+        {"trigger":"getExpectedExceptionCode","contents":"\\$this->getExpectedExceptionCode();"},
+        {"trigger":"getExpectedExceptionMessage","contents":"\\$this->getExpectedExceptionMessage();"},
+        {"trigger":"getExpectedExceptionMessageRegExp","contents":"\\$this->getExpectedExceptionMessageRegExp();"},
         {"trigger":"getMockBuilder","contents":"\\$this->getMockBuilder(${1:className});"},
         {"trigger":"getMockClass","contents":"\\$this->getMockClass(${1:originalClassName});"},
         {"trigger":"getMockForAbstractClass","contents":"\\$this->getMockForAbstractClass(${1:originalClassName});"},
         {"trigger":"getMockForTrait","contents":"\\$this->getMockForTrait(${1:traitName});"},
         {"trigger":"getMockFromWsdl","contents":"\\$this->getMockFromWsdl(${1:wsdlFile});"},
-        {"trigger":"getMockObjectGenerator","contents":"\\$this->getMockObjectGenerator();"},
-        {"trigger":"getMockWithoutInvokingTheOriginalConstructor","contents":"\\$this->getMockWithoutInvokingTheOriginalConstructor(${1:originalClassName});"},
         {"trigger":"getObjectAttribute","contents":"\\$this->getObjectAttribute(${1:object}, ${2:attributeName});"},
         {"trigger":"getOperations","contents":"\\$this->getOperations();"},
         {"trigger":"getSetUpOperation","contents":"\\$this->getSetUpOperation();"},
@@ -227,9 +234,7 @@
         {"trigger":"returnSelf","contents":"\\$this->returnSelf();"},
         {"trigger":"returnValue","contents":"\\$this->returnValue(${1:value});"},
         {"trigger":"returnValueMap","contents":"\\$this->returnValueMap(${1:(array) valueMap});"},
-        {"trigger":"setExpectedException","contents":"\\$this->setExpectedException(${1:exception});"},
         {"trigger":"setExpectedExceptionFromAnnotation","contents":"\\$this->setExpectedExceptionFromAnnotation();"},
-        {"trigger":"setExpectedExceptionRegExp","contents":"\\$this->setExpectedExceptionRegExp(${1:exception});"},
         {"trigger":"setOutputCallback","contents":"\\$this->setOutputCallback(${1:callback});"},
         {"trigger":"setUseErrorHandler","contents":"\\$this->setUseErrorHandler(${1:useErrorHandler});"},
         {"trigger":"setUseErrorHandlerFromAnnotation","contents":"\\$this->setUseErrorHandlerFromAnnotation();"},

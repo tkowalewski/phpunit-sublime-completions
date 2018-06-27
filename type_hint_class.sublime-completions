@@ -3,14 +3,16 @@
     //
     // source.php comment.block
     // source.php meta.class entity.other.inherited-class
+    // source.php meta.class meta.function.return-type
     // source.php meta.function.arguments
     //   blacklist:
     //     variable.other
+    //     variable.parameter
     // source.php meta.use
 
-    "scope": "source.php comment.block, source.php meta.class entity.other.inherited-class, source.php meta.function.arguments - variable.other, source.php meta.use",
+    "scope": "source.php comment.block, source.php meta.class entity.other.inherited-class, source.php meta.class meta.function.return-type, source.php meta.function.arguments - variable.other - variable.parameter, source.php meta.use",
     "completions": [
-        "PHPUnit_Extensions_Database_TestCase",
-        "PHPUnit_Framework_TestCase"
+        {"trigger":"PHPUnit_DbUnit_TestCase","contents":"\\PHPUnit\\DbUnit\\TestCase"},
+        {"trigger":"PHPUnit_Framework_TestCase","contents":"\\PHPUnit\\Framework\\TestCase"}
     ]
 }

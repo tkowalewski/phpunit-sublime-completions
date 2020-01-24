@@ -12,7 +12,6 @@
 
     "scope": "source.php comment.block, source.php meta.class entity.other.inherited-class, source.php meta.class meta.function.return-type, source.php meta.function.arguments - variable.other - variable.parameter, source.php meta.use",
     "completions": [
-        {"trigger":"PHPUnit_DbUnit_TestCase","contents":"\\PHPUnit\\DbUnit\\TestCase"},
         {"trigger":"PHPUnit_Framework_TestCase","contents":"\\PHPUnit\\Framework\\TestCase"}
     ]
 }

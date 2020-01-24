@@ -1,5 +1,21 @@
 # PHPUNIT COMPLETIONS
 
+## 1.2.0
+
+* Update to PHPUnit 8.5
+
+## 1.1.0
+
+* Update to PHPUnit 7.5
+
+## 1.0.0
+
+* Update to PHPUnit 7.2
+
+## 0.13.0
+
+* Update to PHPUnit 6.5
+
 ## 0.12.0
 
 * Update to PHPUnit 5.7.9

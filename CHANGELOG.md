@@ -1,5 +1,11 @@
 # PHPUNIT COMPLETIONS
 
+## 1.3.0 - 2020-04-29
+
+* Update to PHPUnit 9.1
+* Add function argument type hints
+* Support for ST4 completions
+
 ## 1.2.0
 
 * Update to PHPUnit 8.5

@@ -1,6 +1,10 @@
 # PHPUNIT COMPLETIONS
 
-## 1.4.0 - 2020-1-03
+## 1.5.0 - Unreleased
+
+* Add param and return type details
+
+## 1.4.0 - 2020-01-03
 
 * Update to PHPUnit 9.1.3
 * Update to PHP 8.0

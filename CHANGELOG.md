@@ -1,7 +1,9 @@
 # PHPUNIT COMPLETIONS
 
-## 1.5.0 - Unreleased
+## 1.5.0 - 2022-10-10
 
+* Case sensitive sorting
+* Remove non-public completions
 * Add param and return type details
 
 ## 1.4.0 - 2020-01-03

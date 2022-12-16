@@ -1,5 +1,9 @@
 # PHPUNIT COMPLETIONS
 
+## 1.6.0 - Unreleased
+
+* Enriched annotations and details
+
 ## 1.5.0 - 2022-10-10
 
 * Case sensitive sorting

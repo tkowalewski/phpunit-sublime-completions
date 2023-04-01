@@ -1,6 +1,6 @@
 # PHPUNIT COMPLETIONS
 
-## 1.6.0 - Unreleased
+## 1.6.0 - 2023-04-01
 
 * Enriched annotations and details
 

@@ -12,12 +12,12 @@ Provides decent PHPUnit completions for Sublime Text.
 
 # Features
 
-* [PSR](http://www.php-fig.org) compliant
-* Scoped to minimise auto-complete noise
-* Test case type hints e.g. begin typing at `class Name extends |` and any other context where a type hint is valid.
-* [Assertions](https://phpunit.de/manual/current/en/appendixes.assertions.html) e.g. begin typing `assert|` or `$this->assert|`
-* Test case helpers e.g. begin typing `getMockBuilder|` or `$this->getMockBuilder|`
-* [Annotations](https://phpunit.de/manual/current/en/appendixes.annotations.html) e.g. begin typing _(any valid doc block scope)_ `/* @covers| */` or without the `@` symbol `/* covers| */`
+- Fully [PSR](http://www.php-fig.org) compliant
+- Scoped to minimize auto-complete noise
+- Enhanced support for test case type hints, such as starting at `class Name extends |`, and any other context where a type hint is applicable.
+- Extensive [assertions](https://phpunit.de/manual/current/en/appendixes.assertions.html) support, including starting with `assert|` or `$this->assert|`
+- Time-saving test case helpers like starting with `getMockBuilder|` or `$this->getMockBuilder|`
+- Streamlined use of [annotations](https://phpunit.de/manual/current/en/appendixes.annotations.html) through doc block scope, such as `/* @covers| */` or without the `@` symbol `/* covers| */`
 
 ## Key Bindings
 
@@ -29,29 +29,24 @@ To enable [tab-completions](http://docs.sublimetext.info/en/latest/extensibility
 
 ## Installation
 
-### Package Control installation
+**Package Control Installation**
 
-The preferred method of installation is via Package Control.
+1. Open Sublime Text.
+2. Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS) to open the Command Palette.
+3. Type "Package Control: Install Package" and press `Enter`.
+4. In the input field, type "PHPUnit Completions" and select it from the list of available packages.
 
-1. Install [Package Control](https://packagecontrol.io).
-2. From inside Sublime Text, open Package Control's Command Pallet: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Windows, Linux) or <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Mac.
-3. Type `install package` and hit Return. A list of available packages will be displayed.
-4. Type `phpunit-sublime-completions` and hit Return. The package will be downloaded to the appropriate directory.
-5. Restart Sublime Text to complete installation. The features listed above should now be available.
+**Git Repository Installation**
 
-### Manual installation
-
-1. Close Sublime Text.
-2. Download or clone this repository to a directory named `php-completions` in the Sublime Text Packages directory for your platform:
-    * Sublime Text 3
-        - Linux: `git clone https://github.com/tkowalewski/phpunit-sublime-completions.git ~/.config/sublime-text-3/Packages/phpunit-sublime-completions`
-        - OS X: `git clone https://github.com/tkowalewski/phpunit-sublime-completions.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/phpunit-sublime-completions`
-        - Windows: `git clone https://github.com/tkowalewski/phpunit-sublime-completions.git %APPDATA%\Sublime/ Text/ 3/Packages/phpunit-sublime-completions`
-    * Sublime Text 2
-        - Linux: `git clone https://github.com/tkowalewski/phpunit-sublime-completions.git ~/.config/sublime-text-2/Packages/phpunit-sublime-completions`
-        - OS X: `git clone https://github.com/tkowalewski/phpunit-sublime-completions.git ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/phpunit-sublime-completions`
-        - Windows: `git clone https://github.com/tkowalewski/phpunit-sublime-completions.git %APPDATA%\Sublime/ Text/ 2/Packages/phpunit-sublime-completions`
-3. Restart Sublime Text to complete installation. The features listed above should now be available.
+1. Open a terminal or command prompt.
+2. Navigate to the Sublime Text Packages directory:
+    - On Windows: `%APPDATA%\Sublime Text\Packages`
+    - On macOS: `~/Library/Application Support/Sublime Text/Packages`
+    - On Linux: `~/.config/sublime-text/Packages`
+3. Clone the plugin repository directly into the Packages directory using Git:
+   ```
+   git clone https://github.com/tkowalewski/phpunit-sublime-completions.git
+   ```
 
 ## Contributing
 

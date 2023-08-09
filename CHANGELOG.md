@@ -1,4 +1,9 @@
-# PHPUNIT COMPLETIONS
+# Changelog
+
+## 1.7.0 - Unreleased
+
+* Upgrade PHPUnit 10.3
+* Upgrade PHP 8.2
 
 ## 1.6.0 - 2023-04-01
 
